@@ -12,7 +12,6 @@
       console.log('fetch has been called');
 
       console.log(response.status); // 200
-      console.log(response.statusText); // OK
 
       if (response.status === 200) {
           let data = await response.text();
@@ -21,10 +20,15 @@
           return data
 
       }
+
   }
 
-  // fetchData();
+
+    // fetchData();
 
   export default fetchData;
+
+
+  
 
 
