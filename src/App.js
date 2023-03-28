@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Homepage from './pages/Homepage'
-import AsteroidTracker from './pages/AsteroidTracker'
 
 function App() {
   return (
@@ -9,7 +8,7 @@ function App() {
       <div className="pages">
       <Routes>
         < Route path="/"
-        element={<AsteroidTracker />}
+        element={<Homepage />}
         />
       </Routes>
 
