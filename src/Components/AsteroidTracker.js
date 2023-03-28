@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 
 function AsteroidTracker() {
@@ -28,8 +28,6 @@ function AsteroidTracker() {
       const form = new FormData(event.target);
       const start_date = form.get('start_date');
       const end_date = form.get('end_date');
-      console.log('start date ' + start_date );
-      console.log('end date ' + end_date );
       getAsteroids(start_date, end_date);
     }}>
       <div className="date_form">
